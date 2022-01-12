@@ -1,0 +1,43 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+
+  &__li {
+    list-style: none;
+    margin: 0 2em;
+    &--a {
+        margin: auto;
+      text-decoration: none;
+      color: $smoky-black;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: end;
+  }
+  &__links {
+    display: flex;
+    justify-content: flex-end;
+    width: 30em;
+ 
+  }
+  &__logo {
+    background-color: $smoky-black;
+    padding: 1em;
+    width: 3em;
+    &--texto {
+      font-family: $old-standard;
+      font-weight: $raleway-weight-bold;
+      color: $white;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      margin: auto;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+}
