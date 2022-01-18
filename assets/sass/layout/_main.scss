@@ -1,0 +1,45 @@
+// .main {
+//   &__principal {
+//     display: flex;
+//     flex-direction: row-reverse;
+//   }
+// }
+// .section1 {
+//   width: 90VW;
+// }
+// .section2 {
+//   &__button {
+//   }
+//   &__h1 {
+//     font-family: $old-standard;
+//     font-weight: $raleway-weight-bold;
+//     font-size: $font-size-xxx-large;
+//     margin: 2em;
+//   }
+//   &__img {
+//   }
+//   &__p {
+//   }
+// }
+
+// @include movil-view {
+//   .main {
+//     &__principal {
+//       flex-direction: column;
+//     }
+//   }
+//   .section1 {
+
+//   }
+//   .section2 {
+//     &__button {
+//     }
+//     &__h1 {
+
+//     }
+//     &__img {
+//     }
+//     &__p {
+//     }
+//   }
+// }

@@ -1,55 +1,119 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  box-sizing: border-box;
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
   display: block;
 }
 
-body {
-  line-height: 1;
+p a {
+  display: inline;
 }
 
-ol, ul {
-  list-style: none;
+li {
+  list-style-type: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
+table,
+tr,
+td {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.header {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::-moz-selection {
+  background-color: #0C0910;
+  color: #ECECEC;
+}
+
+::selection {
+  background-color: #0C0910;
+  color: #ECECEC;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  /* opcional */
+  appearance: none;
+}
+
+svg {
   width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+  /* opcional */
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .header__li {
   list-style: none;
@@ -71,21 +135,39 @@ table {
 }
 .header__logo {
   background-color: #0C0910;
-  padding: 1em;
-  width: 3em;
+  padding: 1.5em;
 }
 .header__logo--texto {
   font-family: "Old Standard TT", serif;
   font-weight: 700;
   color: #FFF;
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   transform: rotate(180deg);
   margin: auto;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .header__logo--texto {
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-writing-mode: horizontal-tb;
+    -ms-writing-mode: horizontal-tb;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

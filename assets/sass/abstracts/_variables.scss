@@ -25,5 +25,6 @@ $primary-font-regular: $raleway-weight-regular;
 $primary-font-bold: $raleway-weight-bold;
 
 // breakpoints
-$min-tablet: 768px;
-$min-laptop: 992px;
+$max-tablet: 768px;
+$min-laptop: 1024px;
+$max-movil: 425px;
